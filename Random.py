@@ -48,6 +48,18 @@ class Random:
 			, length= length
 		)
 
+	def generateAny(self, among: str= None, length: int= None) -> str:
+		"""
+
+		:param among:
+		:param length:
+		:return:
+		"""
+		return self.__generate(
+			among   = among if among else f'{Constants.DECIMAL}{Constants.STR_LOWER}{Constants.STR_UPPER}{Constants.STR_SYMBOL_A}'
+			, length= length
+		)
+
 	def generateAlphatbetUpper(self, length: int= None) -> str:
 		"""
 
