@@ -101,6 +101,6 @@ class Random:
 		:return:
 		"""
 		return self.__generate(
-			among   = among if among else f'{Constants.STR_LOWER}{Constants.STR_UPPER}{Constants.STR_SYMBOL_P}'
+			among   = among if among else f'{Constants.DECIMAL}{Constants.STR_LOWER}{Constants.STR_UPPER}{Constants.STR_SYMBOL_P}'
 			, length= length
 		)
