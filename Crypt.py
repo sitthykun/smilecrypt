@@ -25,3 +25,41 @@ class Crypto:
 		# init
 		self.__key      = key
 		self.__length   = length
+
+	def __unsign2Sign(self, value: int) -> int:
+		"""
+
+		:param value:
+		:return:
+		"""
+		return value * (-1) if value < 0 else value
+
+	def getKey(self) -> str:
+		"""
+
+		:return:
+		"""
+		return self.__key
+
+	def getLength(self) -> int:
+		"""
+
+		:return:
+		"""
+		return self.__length
+
+	def setKey(self, key: str) -> None:
+		"""
+
+		:param key:
+		:return:
+		"""
+		self.__key      = key
+
+	def setLength(self, length: int) -> None:
+		"""
+
+		:param length:
+		:return:
+		"""
+		self.__length   = self.__unsign2Sign(length)
